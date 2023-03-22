@@ -9,6 +9,7 @@ From: /sw/external/NGC/pytorch_22.09-py3.sif
     cd /CLEAN
     ls -lrt
     pip install funcx
+    pip install funcx-endpoint
     pip freeze | grep 'funcx'
     python build.py install
 
