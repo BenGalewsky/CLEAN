@@ -18,6 +18,7 @@ config = Config(
         HighThroughputExecutor(
             max_workers_per_node=10,
             address=address_by_query(),
+            scheduler_mode='soft',
             worker_mode='singularity_reuse',
             container_type='singularity',
             container_cmd_options="--mount type=bind,src=/scratch/bbmi/bengal1,dst=/project",
