@@ -8,7 +8,7 @@ from funcx_endpoint.executors import HighThroughputExecutor
 
 user_opts = {
     'delta': {
-        'worker_init': 'pwd',
+        'worker_init': 'cd /project',
         'scheduler_options': '#SBATCH --account=bbmi-delta-gpu --gpus=1',
     }
 }
