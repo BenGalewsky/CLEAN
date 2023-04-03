@@ -10,13 +10,15 @@ From: /sw/external/NGC/pytorch_22.09-py3.sif
     ls -lrt
     pip install numpy
     pip install funcx-common==0.0.25
-    pip install funcx-endpoint==1.0.11
-    pip freeze | grep 'funcx'
+    pip install numpy
     python build.py install
+    cd ~/
+    git clone -b benc-debug-with-beng https://github.com/SINDHUSITA/funcX.git
+    cd ~/funcX/funcx_endpoint/
+    pip install .
+    pip freeze
 
 %runscript
     echo "----- CLEAN Inference ----------"
     cd /project
     python /CLEAN/infer.py
-
-
