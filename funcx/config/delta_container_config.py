@@ -1,4 +1,4 @@
-from parsl.addresses import address_by_query
+from parsl.addresses import address_by_interface
 from parsl.launchers import SrunLauncher
 from parsl.providers import SlurmProvider
 
@@ -17,7 +17,7 @@ config = Config(
     executors=[
         HighThroughputExecutor(
             max_workers_per_node=10,
-            address=address_by_query(),
+            address=address_by_interface('hsn0'),
             scheduler_mode='soft',
             worker_mode='singularity_reuse',
             container_type='singularity',
