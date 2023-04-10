@@ -45,6 +45,3 @@ config = Config(
         )
     ],
 )
-
-
-# apptainer exec --mount type=bind,src=/scratch/bbmi/bengal1,dst=/project /projects/bbmi/bengal1/CLEAN.sif cmd_parsl.slurm.1679517352.4974728.sh
