@@ -2,7 +2,7 @@ from funcx import FuncXClient
 
 
 fx = FuncXClient()
-uuid = fx.register_container("/projects/bbmi/bengal1/CLEAN_ritwikd2.sif",
+uuid = fx.register_container("/projects/bbmi/bengal1/pyhf_vsi3.sif",
                              container_type="singularity")
 print("Container ID for CLEAN is ", uuid)
 
